@@ -1,8 +1,7 @@
 import os, glob
 import numpy as np
 from scipy import signal
-
-import wav_util, default
+from . import wav_util, default
 
 def retrieve_wave_files(directory, num_frames):
     '''
@@ -89,6 +88,12 @@ def shift_signal(samples, lag):
 
 
 def xcorr_and_avg(source_samples_dir, nframes):
+    '''
+    Cross-correlate and average a batch of files. 
+    :source_samples_dir: (string) takes given source directory and reads in all WAVE files in the directory. Assumes a batch of signals that are repeated recordings of the same input, and of same length.
+    :nframes: (int) number of frames in a single file.
+    Returns a numpy array of floating-point values representing the averaged signal.
+    '''
     source_samples_arr = retrieve_wave_files(source_samples_dir, nframes)
 
     # upsample for higher accuracy cross-correlation
