@@ -28,7 +28,13 @@ To this effect, this module contains the following sub-modules:
 ```pyaudio numpy scipy matplotlib wave```
 
 -----
+
+An example of the intended functionality of this module is included in the files [`demo.py`](demo.py) and [`demo_reverb.py`](./demo_reverb.py). Sample wav files are included in the [demo](./demo/) directory.
+
+-----
 ### References (cited in the code where relevant)
 A. Farina. “Simultaneous measurement of impulse response and distortion with a Swept-Sine technique”. 108th AES Convention. Paris, France. February 18-22, 2000.
 
 A. Kamenov. "Sine sweep". RecordingBlogs - Wiki. (Publish Date Unavailable) \[Online\]. Available: https://www.recordingblogs.com/wiki/sine-sweep.
+
+Wikipedia. "Chirp". https://en.wikipedia.org/wiki/Chirp. 
