@@ -29,7 +29,13 @@ To this effect, this module contains the following sub-modules:
 
 -----
 
-An example of the intended functionality of this module is included in the files [`demo.py`](demo.py) and [`demo_reverb.py`](./demo_reverb.py). Sample wav files are included in the [demo](./demo/) directory.
+An example of the intended functionality of this module is included in the files [`demo.py`](demo.py) and [`demo_reverb.py`](./demo_reverb.py). 
+
+Sample wav files are included in the [demo](./demo/) directory:
+ * [dry_audio](./demo/dry_audio/): dry audio recordings that can be convlved with the impulse responses to produce an track with "reverb".
+ * [impulse_responses](./demo/impulse_responses/): the resulting impulse responses of three different microphone placements or spaces
+ * [recorded_output](./demo/recorded_output/): recorded sweeps
+ * [sweeps](./demo/sweeps/): example exponential sine sweeps used as input to generate a room response.
 
 -----
 ### References (cited in the code where relevant)
