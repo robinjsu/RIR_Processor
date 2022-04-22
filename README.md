@@ -11,7 +11,6 @@ in order to generate an accurate room impulse response.
 The result is a small Python library to facilitate impulse response processing.
 
 -----
-### Demo
 #### Extracted Impulse Response:
 ![garage_spectro](https://user-images.githubusercontent.com/53282793/164760265-3ecfebcd-fac9-43d8-9a48-7c36c99a8122.png)
 
