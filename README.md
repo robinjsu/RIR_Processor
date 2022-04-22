@@ -12,18 +12,9 @@ The result is a small Python library to facilitate impulse response processing.
 
 -----
 ### Demo
-<figure>
-    <figcaption>Extracted Impulse Response:</figcaption>
-    <audio
-        controls
-        src="./demo/impulse_responses/garage_impulse_isolated.wav">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-</figure>
-
 #### Extracted Impulse Response:
-<img src="./demo/figures/rir_spectrograph.png" alt="spectrograph of room impulse response" width="400">
+![spectrograph](./demo/figures/rir_spectrograph.png)
+<!-- <img src="./demo/figures/rir_spectrograph.png" alt="spectrograph of room impulse response" width=""> -->
 
 ### Module Functionality:
 The goal of this module is to package the processing signals to more easily extract useable room impulse responses from recorded audio files. Deals primarily with 16-bit WAVE files, but also supports reading/writing 24-bit files.
