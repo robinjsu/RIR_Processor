@@ -11,6 +11,10 @@ in order to generate an accurate room impulse response.
 The result is a small Python library to facilitate impulse response processing.
 
 -----
+### Demo
+#### Extracted Impulse Response:
+![](./demo/impulse_responses/garage_impulse_isolated.wav)
+
 ### Module Functionality:
 The goal of this module is to package the processing signals to more easily extract useable room impulse responses from recorded audio files. Deals primarily with 16-bit WAVE files, but also supports reading/writing 24-bit files.
 
