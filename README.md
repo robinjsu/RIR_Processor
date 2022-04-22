@@ -11,8 +11,11 @@ in order to generate an accurate room impulse response.
 The result is a small Python library to facilitate impulse response processing.
 
 -----
-#### Extracted Impulse Response:
+Extracted impulse response, rendered as a spectrograph:
+
 ![garage_spectro](https://user-images.githubusercontent.com/53282793/164760265-3ecfebcd-fac9-43d8-9a48-7c36c99a8122.png)
+
+-----
 
 ### Module Functionality:
 The goal of this module is to package the processing signals to more easily extract useable room impulse responses from recorded audio files. Deals primarily with 16-bit WAVE files, but also supports reading/writing 24-bit files.
@@ -23,7 +26,7 @@ To this effect, this module contains the following sub-modules:
 * [`graph.py`](./ir_module/graph.py) output a graph of the signal short-time Fourier transform (STFT), to help with visualizing the frequency content of a signal.
 * [`avg_signal.py`](./ir_module/avg_signal.py) takes a batch of repeated recorded audio signals, cross-correlates them, and performs an average over the batch (typically to increase signal-to-noise ratio).
 * [`convolve.py`](./ir_module/convolve.py) given an audio recording and an impulse response, the function convolves the audio recording to apply the room effects modeled by the impulse response function.
-* [`impulse_reseponse.py`](./ir_module/impulse_response.py) extract the room impulse response of a recorded signal, given the reference input signal
+* [`impulse_reseponse.py`](./ir_module/impulse_response.py) extract the room impulse response of a recorded signal, given the reference input signal.
 * [`default.py`](./ir_module/default.py) useful default constants that are frequently used throughout the module. Can be overridden via keyword arguments where necessary.
 
 -----
